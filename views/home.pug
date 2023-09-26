@@ -1,0 +1,47 @@
+extends base.pug 
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection 
+        div Welcome to Dipesh's Dance Academy 
+        div.small Live, Dance and Repeat 
+        
+    section#missionSection 
+        h1 Our Missions 
+        div.card 
+            h3 Dance Perfection 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/card1.png", alt="Dance Perfection")
+                div.card-content 
+                    p This is the best dance academy of Nepal
+
+        div.card 
+            h3 Dance the way you like 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/card2.png", alt="Dance the way you like")
+                div.card-content 
+                    p This is the best dance academy of Nepal
+
+        div.card 
+            h3 Expert Teaching 
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/card3.png", alt="Expert Teaching")
+                div.card-content 
+                    p This is the best dance academy of Nepal 
+
+    section#sponsersSection 
+        h1 Our Sponsers 
+        div#sponsers 
+            img(src="/static/img/google.png", alt="google" class = "spimage")
+            img(src="/static/img/microsoft.png", alt="microsoft" class = "spimage")
+            img(src="/static/img/apple.png", alt="apple" class = "spimage")
+            img(src="/static/img/meta.png", alt="meta" class = "spimage")
